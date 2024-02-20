@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">CumpusConnectV1</string>
+
+    <string-array name="turkey_universty">
+        <item>Giresun</item>
+        <item>Karadeniz Teknik</item>
+        <item>Ordu</item>
+        <item>Trabzon</item>
+        <item>Istanbul Teknik</item>
+        <item>Odtu</item>
+        <item>Yildiz Teknik</item>
+        <item>BAHCESEHİR</item>
+        <item>YASAR UNİVERSİTESİ</item>
+        <item>MALTEPE UNİVERSİTESİ</item>
+        <item>ISTINYE UNİVERSİTESİ</item>
+        <item>USKUDAR UNİVERSİTESİ</item>
+        <item>SAKARYA UNİVERSİTESİ</item>
+    </string-array>
+
+    <string-array name="turkey_universty_Admin">
+        <item>All</item>
+        <item>Giresun</item>
+        <item>Karadeniz Teknik</item>
+        <item>Ordu</item>
+        <item>Trabzon</item>
+        <item>Istanbul Teknik</item>
+        <item>Odtu</item>
+        <item>Yildiz Teknik</item>
+        <item>BAHCESEHİR</item>
+        <item>YASAR UNİVERSİTESİ</item>
+        <item>MALTEPE UNİVERSİTESİ</item>
+        <item>ISTINYE UNİVERSİTESİ</item>
+        <item>USKUDAR UNİVERSİTESİ</item>
+        <item>SAKARYA UNİVERSİTESİ</item>
+    </string-array>
+
+    <string-array name="universty_departs">
+        <item>Muhendislik Fakultesi</item>
+        <item>Mimarlık Fakultesi</item>
+        <item>Eğ-gitim Fakultesi</item>
+        <item>Dis Hekimligi Fakultesi</item>
+        <item>Tıp Fakultesi</item>
+        <item>İktisadi ve İdari Bilimler Fakultesi</item>
+        <item>Edebiyat Fakultesi</item>
+        <item>Eczacılık Fakultesi</item>
+        <item>Hukuk Fakultesi</item>
+        <item>Trabzon</item>
+    </string-array>
+
+    <string-array name="universty_job">
+        <item>Bilgisayar muhendisligi</item>
+        <item>Elektronik</item>
+        <item>Fizyoterapi ve Rehabilitasyon</item>
+        <item>Fransız Dili ve Edebiyatı</item>
+        <item>Gida Mühendisligi</item>
+        <item>Grafik Tasarımı</item>
+        <item>Havacılık ve Uzay Mühendisligi</item>
+        <item>Hemsirelik</item>
+        <item>Ic Mimarlık</item>
+        <item>Lojistik Yönetimi</item>
+        <item>Siyaset Bilimi ve Uluslararası Iliskiler</item>
+        <item>Yazilim mühendisligi</item>
+        <item>Dis Hekimligi</item>
+        <item>Tip Fakultesi</item>
+        <item>Ilkogretim Ogretmenligi</item>
+    </string-array>
+
+    <string-array name="universty_class">
+        <item>Hazirlik</item>
+        <item>1.Sinif</item>
+        <item>2.Sinif</item>
+        <item>3.Sinif</item>
+        <item>4.Sinif</item>
+        <item>5.Sinif</item>
+        <item>6.Sinif</item>
+    </string-array>
+
+    <string-array name="person_hobby">
+        <item>Futbol</item>
+        <item>Voleybol</item>
+        <item>Basketbol</item>
+    </string-array>
+
+    <string-array name="person_mevk">
+        <item>Sag Bek</item>
+        <item>Kaleci</item>
+        <item>Sol Bek</item>
+        <item>Stoper</item>
+        <item>Defansif Orta Saha</item>
+        <item>Ofansif Orta Saha </item>
+        <item>Gobek</item>
+        <item>Sag Kanat</item>
+        <item>Sol Kanat</item>
+        <item>Forvet</item>
+
+        <item>Pasör</item>
+        <item>Pasör Çaprazı</item>
+        <item>Orta Oyuncu</item>
+        <item>Smaçör</item>
+        <item>Libero</item>
+
+        <item>Guard</item>
+        <item>Oyuncu Kurucu</item>
+        <item>Combo Guard</item>
+        <item>Sutör Guard</item>
+        <item>Swingman</item>
+        <item>Cornerman</item>
+        <item>Point Forvet</item>
+        <item>Kısa ve Uzun Forvet</item>
+        <item>Pivot</item>
+    </string-array>
+
+
+    <string-array name="admin_mevk">
+        <item>All</item>
+
+        <item>Sag Bek</item>
+        <item>Kaleci</item>
+        <item>Sol Bek</item>
+        <item>Stoper</item>
+        <item>Defansif Orta Saha</item>
+        <item>Ofansif Orta Saha </item>
+        <item>Gobek</item>
+        <item>Sag Kanat</item>
+        <item>Sol Kanat</item>
+        <item>Forvet</item>
+
+        <item>Pasör</item>
+        <item>Pasör Çaprazı</item>
+        <item>Orta Oyuncu</item>
+        <item>Smaçör</item>
+        <item>Libero</item>
+
+        <item>Guard</item>
+        <item>Oyuncu Kurucu</item>
+        <item>Combo Guard</item>
+        <item>Sutör Guard</item>
+        <item>Swingman</item>
+        <item>Cornerman</item>
+        <item>Point Forvet</item>
+        <item>Kısa ve Uzun Forvet</item>
+    </string-array>
+
+    <string-array name="admin_hobby">
+        <item>All</item>
+        <item>Futbol</item>
+        <item>Voleybol</item>
+        <item>Basketbol</item>
+    </string-array>
+
+    <string-array name="time_str">
+        <item>All</item>
+        <item>2024</item>
+        <item>2023</item>
+        <item>2022</item>
+        <item>2021</item>
+        <item>2020</item>
+    </string-array>
+
+</resources>
+

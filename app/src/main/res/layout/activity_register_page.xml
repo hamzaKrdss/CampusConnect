@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compusv2bg"
+    tools:context=".Register_Page">
+
+
+    <TextView
+        android:id="@+id/signpg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="Hoşgeldin\n\t\t\t\t\t\t\t\t\tAramıza"
+        android:gravity="center|left"
+        android:paddingStart="10dp"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/loginBtn"
+        android:layout_below="@+id/signpg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/firstName"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/new_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:hint="İsim"
+                    android:layout_marginStart="20dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/secondName"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/new_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:hint="Soy İsim"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/mailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Eposta"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/firstName"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/phoneNm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Telefon numarası"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/mailTxt"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@id/passwordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNm"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/passwordTxt"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/maleRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Erkek" />
+
+                    <RadioButton
+                        android:id="@+id/femaleRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Kadın" />
+
+                </RadioGroup>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/uniTxt"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/baseline_location_on_24"
+                    android:hint="Üniversite"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="text"
+                    android:layout_gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/ageTxt"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="0dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/new_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:hint="Yaş"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/fakulteTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/new_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Fakülte"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/bolumTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/new_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Bölüm"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/sinifTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_edit_txt"
+                android:drawableLeft="@drawable/new_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:elevation="5dp"
+                android:hint="Sınıf"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/hobiTxt"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/new_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:hint="Hobi"
+                    android:layout_marginStart="20dp"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="10dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/mevkiTxt"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_edit_txt"
+                    android:drawableLeft="@drawable/new_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="5dp"
+                    android:hint="Mevki"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="90dp"
+        android:text="Kayıt Ol"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="140dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaten bir hesaba sahipmsin? "
+            android:textSize="20sp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/logPg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
